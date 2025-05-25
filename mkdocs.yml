@@ -1,7 +1,7 @@
 site_name: ''
 
 nav:
-  - ES6 Procedimentos: 
+  - Home: 
     - '': home.md
   - Bombeiro DFe e 4DFe: 
      - Escala: escala.md
