@@ -9,6 +9,13 @@ nav:
   - Mikael: 
     - Evidências chamados: evi_chamados.md
 
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
 theme:
   name: material
   features:
@@ -27,4 +34,3 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Alternar para o modo claro
-  

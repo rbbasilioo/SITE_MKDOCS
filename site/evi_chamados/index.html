@@ -568,7 +568,10 @@
 
   <h1>Evidências chamados</h1>
 
-
+<pre class="mermaid"><code>graph LR
+  A[Chamado] --&gt; B{Bug/Impossibilidade de atendimento?};
+  B --&gt;|Sim| C[Encaminhar para fila ES6 Manutenção];
+  C --&gt; D[Atendimento ES6];</code></pre>
 
 
 
