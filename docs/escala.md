@@ -1,0 +1,3 @@
+Aqui está o meu calendário referente a escala:
+
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showPrint=0&showTz=0&showNav=0&showCalendars=0&showTabs=0&src=YmFzaWxpb3JhZmFlbDA0QGdtYWlsLmNvbQ&src=ZW4uYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%230B8043" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>

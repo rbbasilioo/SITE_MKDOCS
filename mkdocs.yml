@@ -1,0 +1,30 @@
+site_name: ''
+
+nav:
+  - ES6 Procedimentos: 
+    - '': home.md
+  - Bombeiro DFe e 4DFe: 
+     - Escala: escala.md
+     - Regras: regra_bomb.md
+  - Mikael: 
+    - Evidências chamados: evi_chamados.md
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+  logo: /images/synchro_branco.png
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Alternar para o modo escuro
+    - scheme: slate
+      primary: black
+      accent: lime
+      toggle:
+        icon: material/brightness-7
+        name: Alternar para o modo claro
+  

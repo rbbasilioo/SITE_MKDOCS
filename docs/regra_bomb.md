@@ -1,0 +1,3 @@
+- Enviar todas evidencias em anexo no e-mail para análise;
+- Para Severidado 2 será atendido até em 6 horas após abertura do e-mail;
+- Para Severidado 3 será atendido até próximo dia útil após abertura do e-mail;
