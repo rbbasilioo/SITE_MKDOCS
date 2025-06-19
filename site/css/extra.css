@@ -1,0 +1,74 @@
+/* overrides/css/extra.css */
+
+/* Estilo básico para o container do banner */
+.welcome-banner {
+  /* Estilo de fundo, alinhamento, etc. */
+  /*background-color: #263238; /* Ou a cor exata do seu tema */
+  /*color: white;
+  padding: 60px 40px; /* Ajuste o padding conforme necessário */
+  text-align: left;
+  margin-top: -24px; /* Ajusta para preencher o espaço superior do cabeçalho */
+  /* Para centralizar o conteúdo dentro da largura da página */
+  max-width: var(--md-typeset-width); /* Ajusta para a largura de conteúdo padrão do Material */
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura */
+}
+
+.welcome-banner + .md-content__inner h1:first-of-type, /* Se o h1 estiver dentro do container de conteúdo */
+.welcome-banner + .md-content h1:first-of-type, /* Uma alternativa, dependendo da estrutura exata */
+.welcome-banner + h1 { /* Se o h1 for irmão direto do banner */
+    display: none;
+}
+
+.homepage-image img {
+    max-width: 800px; /* Define um tamanho máximo para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras se houver */
+    margin-left: auto; /* Centraliza a imagem se a div for maior */
+    margin-right: auto;
+}
+
+/* Estilo para o título do banner */
+.welcome-banner-heading {
+  font-size: 3em; /* Ajuste o tamanho da fonte */
+  font-weight: 700; /* Negrito */
+  line-height: 1.2;
+  margin-bottom: 20px;
+  margin-top: 0;
+  width: 60%; /* Largura para o título */
+  /* Mantenha a cor branca, pois o pai já define */
+}
+
+/* Estilo para o texto da descrição */
+.welcome-banner-text {
+  font-size: 1.2em; /* Ajuste o tamanho da fonte */
+  line-height: 1.5;
+  margin-bottom: 0;
+  width: 60%; /* Largura para o texto */
+  /* Mantenha a cor branca, pois o pai já define */
+}
+
+/* Media Queries para responsividade, ajuste conforme necessário */
+@media screen and (max-width: 960px) {
+  .welcome-banner {
+    padding: 40px 20px;
+  }
+  .welcome-banner-heading,
+  .welcome-banner-text {
+    width: 100%; /* Em telas menores, ocupa a largura total */
+    font-size: 2.2em;
+  }
+  .welcome-banner-text {
+      font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .welcome-banner-heading {
+    font-size: 1.8em;
+  }
+  .welcome-banner-text {
+    font-size: 0.9em;
+  }
+}

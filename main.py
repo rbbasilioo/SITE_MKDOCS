@@ -5,8 +5,8 @@ app = Flask(__name__, static_folder='site')
 
 @app.route('/')
 def index():
-    #return send_from_directory(app.static_folder, 'index.html')
-    return redirect(url_for('serve_static', path='home/')) 
+    return send_from_directory(app.static_folder, 'index.html')
+    #return redirect(url_for('serve_static', path='home/')) 
     ##caso do windowns por questoes de case-sensitive ou caminhos relativos podem dar conflitos.
     ## usar o redirect como na linha acima, lembrando de qual index.thml esta no caso deste projeto, está na /site/home/index.html
     ## Se sua home nao chamar home e qualquer outra coisa , por exemplo: index/index.html , informar o path='index/' que é o diretorio da primeira pagina onde está dentor do diretório site.
@@ -26,4 +26,5 @@ def serve_static(path):
         return send_from_directory(app.static_folder, path)
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app.run(host='0.0.0.0', port='80')
+    #debug=true -> se quiser ver problemas (colocar dentro o app.run)
