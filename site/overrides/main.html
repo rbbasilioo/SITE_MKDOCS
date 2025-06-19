@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if page.is_homepage %}
+<div class="welcome-banner">
+    <div class="welcome-text-and-image"> {# NOVA DIV PARA AGRUPAR TEXTO E IMAGEM #}
+        <div> {# DIV PARA O TEXTO #}
+            <h1 class="welcome-banner-heading">{{ config.extra.homepage_welcome_heading | safe }}</h1>
+            <p class="welcome-banner-text">{{ config.extra.homepage_welcome_text }}</p>
+        </div>
+        <div class="homepage-image"> {# DIV PARA A IMAGEM #}
+            <img src="/images/synchro.png" alt="Logo Synchro">
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{# Renderiza o conteúdo original da página Markdown (se houver) #}
+{{ super() }}
+{% endblock %}

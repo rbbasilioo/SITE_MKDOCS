@@ -1,15 +1,25 @@
-site_name: ''
+site_name: 'Equipe de Engenharia 6 (ES6)'
 
 nav:
-  - Home: 
-    - '': home.md
-  - Bombeiro DFe e 4DFe: 
-     - Escala: escala.md
-     - Regras: regra_bomb.md
+  - Home: index.md
+  - DFe e 4DFe: 
+     - Bombeiro: bombeiro.md
+     - Evidências/Análises: envidencias_dfe.md
   - Mikael: 
-    - Evidências chamados: evi_chamados.md
+    - Evidências geral: mikael.md
+
+extra_css: 
+  - css/extra.css
+
+extra:
+  # Variáveis para o banner de boas-vindas na home
+  homepage_welcome_heading: 'Bem-vindo ao site de<br>Equipe de Engenharia' # <br> para quebra de linha
+  homepage_welcome_text: 'Encontre documentações, guias, exemplos de configurações e orientações que você precisa para interagir com a equipe de Equipe de Engenharia.'
 
 markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -18,19 +28,21 @@ markdown_extensions:
 
 theme:
   name: material
+  custom_dir: docs/overrides
   features:
     - navigation.tabs
   logo: /images/synchro_branco.png
+  favicon: /images/synchro_branco.png
   palette:
     - scheme: default
       primary: indigo
       accent: indigo
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-night
         name: Alternar para o modo escuro
     - scheme: slate
       primary: black
       accent: lime
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-sunny
         name: Alternar para o modo claro
